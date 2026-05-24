@@ -1,0 +1,11 @@
+#A1552D
+#C67455
+#402112
+#F5DBD0
+
+Cores do site do maquiador
+#FFFFFF — Branco
+#F5DDD8 — Linho
+#F8D5D8 — Rosa claro
+#FEA69C — Salmão
+#1A1919 — 

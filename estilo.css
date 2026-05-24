@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78bd0 );
+ width: 100%; height: 300px; display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap;}
+
+ header img{ width: 200px; height: 200px; margin: 10px;}
+     
+ header h2{display: flex;  font-family: "satisfy",cursive; font-size: 3em;color: rgb(123, 2, 139);}
+
+ header nav{display: flex; align-self: flex-start; gap: 20px;padding: 20px; margin-right: 40px; margin-top: 10px;}
+
+ header nav li{list-style: none;}
+
+ 
+         @media (max-width: 768px) {
+         header{ flex-direction: column; }
+          header img{ width: 150px; height: 150px;}
+         header h2{font-size: 2em;}
+          header nav{ align-self: center;}
+  }
+
+      /* SESSÃO INICIAL */
+
+      section.inicial{background-image: url(img/mk1.jpg); background-repeat: no-repeat;background-size: cover; width: 100%; height: 100%; display: flex; flex-direction: column;
+    justify-content:flex-end; align-items:center;}
+ 
+       section.inicial h1{ width: 80%; height: 80px; display: flex; justify-content: center; align-items: center; background-color: rgba(12, 12, 12, 0.342); border-radius: 15px; color:rgb(221, 219, 214);}
+
+        section.inicial img{ width: 100px; height: 100px;}
+
+         section.inicial .btn{background-color: #e78bd0; padding: 20px; font-weight: bold; text-decoration: none; border-radius: 10px; display: flex;margin-bottom: 30px; margin-top: 30px;}
+
+          /* DISPOSITÍVOS MÓVEIS */
+         
+         @media (max-width: 768px) {
+          section.inicial{justify-content:center;}   
+         section.inicial h1{ width: 100%; height: 80px; font-size: 1.3em; background-color: rgba(244, 161, 161, 0.342);color:rgb(24, 24, 23);} 
+          section.inicial .btn{width: 100%; display:flex ; justify-content: center;
+       background-color: #e78bd04c; }   
+}
+
+       /* COMHEÇA */
+
+    .conheca{display: flex; flex-direction: column;
+    align-items: center; padding: 100px 50px;}
+     .conheca h3{ display: flex; align-items: center; font-size: 2em; margin-bottom: 35px;}
+    .conheca p{max-width: 900px; margin-bottom: 35px; font-size: 1.3em;}
+     .conheca hr{width: 400px; height: 3px; background-color: #f7067e; border: none;
+    margin-bottom: 25px;}
+     .conheca .grid{width: 100%; display: flex; flex-wrap: wrap;}
+     .conheca .grid li{height: 600px; padding: 20px;border-radius: 5px;
+    background-clip: content-box;background-size: cover;background-position: center;}
+
+    .conheca .grid li.small{flex-basis: 40%;}
+.conheca .grid li.large{flex-basis: 60%;}
+
+@media (max-width: 768px){
+   .conheca .grid li.small , .conheca .grid li.large{flex-basis: 100%;}
+   .conheca p{text-align: center;}
+}
+
+      /*CARACTERISTICAS*/
+
+      .caracteristicas{
+        background-color:  #191c03;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 50px;
+    }
+     .caracteristicas h3{font-size: 2em;margin-bottom: 35px; color: #fff;}
+     .caracteristicas p{max-width: 950px;margin-bottom: 35px;color: #fff;}
+     .caracteristicas hr{width: 400px; height: 2px; margin-bottom: 30px; background-color: #f7067e;
+    border: none;}
+
+    .caracteristicas .grade{width: 100%;display: flex;}
+    .caracteristicas .grade li{padding: 0 30px; text-align: center;}
+    .caracteristicas .grade li span{color:#c3c63b;font-size: 3.5em;  margin-bottom: 30px;}
+    .caracteristicas .grade li h4{font-size: 1.5em; color: #c3c63b;margin-bottom: 35pdx;}
+
+    @media (max-width: 768px){
+    .caracteristicas .grade{flex-direction: column;}
+    .caracteristicas h3 , .caracteristicas p{text-align: center;}
+}
+
+
+ /*RODAPÉ*/
+ footer{ display: flex;flex-direction: column;align-items: center;
+padding: 50px 0px;background-color:#191c03;width: 100%; height: 150px;margin-top: 35px;}
+
+footer ul{display: flex;margin-bottom: 25px;}
+footer ul li{margin-right: 10px;}
+footer ul li:last-child{margin-right: 0;}
+footer ul li a{color: #c3c63b; font-size: 2em;}
+footer p{color: #c3c63b;}
+
