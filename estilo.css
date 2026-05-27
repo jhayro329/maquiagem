@@ -22,7 +22,7 @@ header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78
  header nav li{list-style: none;}
 
  
-         @media (max-width: 768px) {
+         @media (max-width: 412px) {
          header{ flex-direction: column; }
           header img{ width: 150px; height: 150px;}
          header h2{font-size: 2em;}
@@ -42,7 +42,7 @@ header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78
 
           /* DISPOSITÍVOS MÓVEIS */
          
-         @media (max-width: 768px) {
+         @media (max-width: 412px) {
           section.inicial{justify-content:center;}   
          section.inicial h1{ width: 100%; height: 80px; font-size: 1.3em; background-color: rgba(244, 161, 161, 0.342);color:rgb(24, 24, 23);} 
           section.inicial .btn{width: 100%; display:flex ; justify-content: center;
@@ -88,7 +88,7 @@ header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78
     .caracteristicas .grade li span{color:#c3c63b;font-size: 3.5em;  margin-bottom: 30px;}
     .caracteristicas .grade li h4{font-size: 1.5em; color: #c3c63b;margin-bottom: 35pdx;}
 
-    @media (max-width: 768px){
+    @media (max-width: 412px){
     .caracteristicas .grade{flex-direction: column;}
     .caracteristicas h3 , .caracteristicas p{text-align: center;}
 }
