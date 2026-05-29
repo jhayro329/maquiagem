@@ -25,11 +25,11 @@ header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78
       /* HEADER DISPOSITIVOS MÓVÉIS */   
 
  
- @media screen and (min-width:600px) and (max-width: 678px) {
+ @media screen and (min-width:360px) and (max-width: 412px) {
          header{ flex-direction: column;}
          header img{width: 150PX;height: 150px;}
           header h2{font-size: 1.5em;}
-          header nav {margin-left:150px;}
+          header nav {margin-left:50px;}
              
           
   }
