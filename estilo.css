@@ -7,11 +7,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    width: 100vw;
-    height: 100vh;
+    background-color: #db8d634f;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78bd0 );
- width: 100%; height: 300px; display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap;}
+ width: 100%; height:auto; display: flex; justify-content: space-between; align-items: center;}
 
  header img{ width: 200px; height: 200px; margin: 10px;}
      
@@ -25,34 +27,47 @@ header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78
       /* HEADER DISPOSITIVOS MÓVÉIS */   
 
  
- @media screen and (min-width:360px) and (max-width: 412px) {
-         header{ flex-direction: column;}
-         header img{width: 150PX;height: 150px;}
-          header h2{font-size: 1.5em;}
-          header nav {margin-left:50px;}
-             
-          
+ @media screen and (max-width:768px) {
+         header {
+             flex-direction: column;
+        }
+         header img{
+            width: 150px;
+            height: 150px;
+        }
+          header h2{
+            font-size: 1.5em;}
+          header nav {
+            margin-left:0;
+            justify-content: center;
+            width: 100%;
+        }
+                     
   }
 
       /* SESSÃO INICIAL */
 
-      section.inicial{background-image: url(img/mk1.jpg); background-repeat: no-repeat;background-size: cover; width: 100%; height: 100%; display: flex; flex-direction: column;
+      section.inicial{background-image: url(img/mk1.jpg); background-repeat: no-repeat;background-size: cover; width: 100%; height:auto; display: flex; flex-direction: column;
     justify-content:flex-end; align-items:center;}
  
        section.inicial h1{ width: 80%; height: 80px; display: flex; justify-content: center; align-items: center; background-color: rgba(12, 12, 12, 0.342); border-radius: 15px; color:rgb(221, 219, 214);}
 
         section.inicial img{ width: 100px; height: 100px;}
 
-         section.inicial .btn{background-color: #e78bd0; padding: 20px; font-weight: bold; text-decoration: none; border-radius: 10px; display: flex;margin-bottom: 30px; margin-top: 30px;}
+         section.inicial .btn{background-color: #f06ad3; padding: 20px; font-weight: bold; text-decoration: none; border-radius: 10px; display: flex;margin-bottom: 30px; margin-top: 30px;}
 
           /* INICIAL DISPOSITÍVOS MÓVEIS */
          
-         @media (max-width: 625px) {
-          section.inicial{background-position: center;  justify-content:center;}
-           
+         @media (max-width: 768px) {
+          section.inicial{
+            background-position: center;  justify-content:center;
+        }
+         }
+
          section.inicial h1{ width: 90%; height: 150px; font-size: 1.3em; background-color: rgba(244, 161, 161, 0.342);color:rgb(24, 24, 23);text-align: center;} 
-          section.inicial .btn{width: 100%; display:flex ; justify-content: center;margin-top: 80px ; background-color: #e78bd04c; }   
-}
+         
+          section.inicial .btn{width: 100%; display:flex ; justify-content: center;margin-top: 80px ; background-color: #e93fbe79; }   
+
 
        /* COMHEÇA */
 
@@ -71,8 +86,10 @@ header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78
 
  /*CONHEÇA DISPOSITIVOS MÓVEIS*/
 
-@media (max-width: 625px){
-   .conheca .grid li.small , .conheca .grid li.large{flex-basis: 100%;}
+@media (max-width: 768px){
+   .conheca .grid li.small , .conheca .grid li.large{
+    flex-basis: 100%;
+   }
    .conheca p{text-align: center;font-size: 1em;}
     .conheca h3{ display: flex; text-align: center; font-size: 1.8em; }
 }
@@ -94,13 +111,15 @@ header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78
     .caracteristicas .grade{width: 100%;display: flex;}
     .caracteristicas .grade li{padding: 0 30px; text-align: center;}
     .caracteristicas .grade li span{color:#c3c63b;font-size: 3.5em;  margin-bottom: 30px;}
-    .caracteristicas .grade li h4{font-size: 1.5em; color: #c3c63b;margin-bottom: 35pdx;}
+    .caracteristicas .grade li h4{font-size: 1.5em; color: #c3c63b;margin-bottom: 35px;}
 
      /*CARACTERÍSTICAS DISPOSITIVOS MÓVEIS*/
 
-    @media (max-width: 625px){
-    .caracteristicas .grade{flex-direction: column;}
-    .caracteristicas h3 , .caracteristicas p{text-align: center;}
+    @media (max-width: 768px){
+    .caracteristicas .grade{
+        flex-direction: column;}
+    .caracteristicas h3 , .caracteristicas p{
+        text-align: center;}
 }
 
 
