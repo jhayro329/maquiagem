@@ -21,13 +21,17 @@ header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78
 
  header nav li{list-style: none;}
 
+
+      /* HEADER DISPOSITIVOS MÓVÉIS */   
+
  
-         @media (max-width: 412px) {
-         header{ flex-direction: column; justify-content: space-around; align-content:center;}
-          header img{ width: 150px; height: 150px; margin-right: 30px;margin-top: 10px;}
-         header h2{font-size: 0.9em; width:50%;}
-          header nav li{font-size: 1em;}
-          header nav{ align-self:flex-start; margin-left: 50px;}
+         @media (max-width: 625px) {
+         header{ flex-direction: column;}
+         header img{width: 150PX;height: 150px;}
+          header h2{font-size: 2em;}
+          header nav {margin-left: 120px;}
+             
+          
   }
 
       /* SESSÃO INICIAL */
@@ -41,9 +45,9 @@ header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78
 
          section.inicial .btn{background-color: #e78bd0; padding: 20px; font-weight: bold; text-decoration: none; border-radius: 10px; display: flex;margin-bottom: 30px; margin-top: 30px;}
 
-          /* DISPOSITÍVOS MÓVEIS */
+          /* INICIAL DISPOSITÍVOS MÓVEIS */
          
-         @media (max-width: 412px) {
+         @media (max-width: 625px) {
           section.inicial{background-position: center;  justify-content:center;}
            
          section.inicial h1{ width: 90%; height: 150px; font-size: 1.3em; background-color: rgba(244, 161, 161, 0.342);color:rgb(24, 24, 23);text-align: center;} 
@@ -65,7 +69,9 @@ header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78
     .conheca .grid li.small{flex-basis: 40%;}
 .conheca .grid li.large{flex-basis: 60%;}
 
-@media (max-width: 412px){
+ /*CONHEÇA DISPOSITIVOS MÓVEIS*/
+
+@media (max-width: 625px){
    .conheca .grid li.small , .conheca .grid li.large{flex-basis: 100%;}
    .conheca p{text-align: center;font-size: 1em;}
     .conheca h3{ display: flex; text-align: center; font-size: 1.8em; }
@@ -90,7 +96,9 @@ header{  background-image: linear-gradient(to top,#eec9c1,#db8d63 , #ecbf6b,#e78
     .caracteristicas .grade li span{color:#c3c63b;font-size: 3.5em;  margin-bottom: 30px;}
     .caracteristicas .grade li h4{font-size: 1.5em; color: #c3c63b;margin-bottom: 35pdx;}
 
-    @media (max-width: 412px){
+     /*CARACTERÍSTICAS DISPOSITIVOS MÓVEIS*/
+
+    @media (max-width: 625px){
     .caracteristicas .grade{flex-direction: column;}
     .caracteristicas h3 , .caracteristicas p{text-align: center;}
 }
